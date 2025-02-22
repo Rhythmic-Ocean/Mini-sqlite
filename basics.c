@@ -115,9 +115,13 @@ char **arg_reader(char *line) {
 
     token = strtok(line, DELIM);
     while (token != NULL) {
-        if (p >= buffer_read - 1) { 
-            printf("Too many arguments! Increase buffer size.\n");
-            break;
+        if (p >= buffer_read - 1) {
+            buffer_read += GOOD_BUFFER;
+            tokens = realloc(tokens, buffer_read);
+            if (!tokens) {
+                printf("Memory error\n");
+                exit(1);
+            }
         }
 
         tokens[p] = malloc(MAX_CHAR_LENGTH);
@@ -162,4 +166,6 @@ void commit(FILE *filename)
     }
     printf("Changes committed successfully.\n");
 }
+
+
 
