@@ -82,9 +82,9 @@ This also contains a single function (exec_writer), and is arguably the most com
 
 The second part was the else if (.....”INSERT”...) followed by if(.....”NEW”...). All it does is reallocate some more memory into row and row[].column_data[] and add the data the users want to it. Nothing too fancy, though I will probably try again with the INSERT OLD functionality.
 
-<h2>24<sup>th</sup> Make file added for easier compilation</h2>
+<h3>24<sup>th</sup> Make file added for easier compilation</h3>
 
-<h3><p>Just found out about this stuff. Now all you need to do is:
+<p>Just found out about this stuff. Now all you need to do is:
 
     make final`
 
@@ -92,4 +92,4 @@ and you will have compiled the exe file with the name final which you can just r
 
     ./final table
 
-Pretty Cool stuff.</p></h3>
+Pretty Cool stuff.</p>
