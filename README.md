@@ -82,7 +82,9 @@ This also contains a single function (exec_writer), and is arguably the most com
 
 The second part was the else if (.....”INSERT”...) followed by if(.....”NEW”...). All it does is reallocate some more memory into row and row[].column_data[] and add the data the users want to it. Nothing too fancy, though I will probably try again with the INSERT OLD functionality.
 
-<h3>24<sup>th</sup> Make file added for easier compilation</h3>
+<h2>24<sup>th</sup> Feb 2025:</h2>
+
+<h3>Makefile added for easier compilation</h3>
 
 <p>Just found out about this stuff. Now all you need to do is:
 
