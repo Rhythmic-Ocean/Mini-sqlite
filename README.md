@@ -88,7 +88,7 @@ The second part was the else if (.....”INSERT”...) followed by if(.....”NE
 
 <p>Just found out about this stuff. Now all you need to do is:
 
-    make final`
+    make final
 
 and you will have compiled the exe file with the name final which you can just run with
 
