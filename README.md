@@ -81,3 +81,15 @@ It is basically the printer that prints the entire table. I initially wanted to 
 This also contains a single function (exec_writer), and is arguably the most complicated function in this program. It handles the “CREATE” and “INSERT NEW” functionalities. Here too, I wanted to have “INSERT OLD ….. WHERE…..” initially but quickly gave up on the idea. The first part of this function would be if(.....”CREATE”...), and this involved first determining if master_memory_header and row are already occupied and freeing them manually. Then we have to fill just the header with whatever arguments were passed in with CREATE.
 
 The second part was the else if (.....”INSERT”...) followed by if(.....”NEW”...). All it does is reallocate some more memory into row and row[].column_data[] and add the data the users want to it. Nothing too fancy, though I will probably try again with the INSERT OLD functionality.
+
+<h2>24<sup>th</sup> Make file added for easier compilation</h2>
+
+<h3><p>Just found out about this stuff. Now all you need to do is:
+
+    make final`
+
+and you will have compiled the exe file with the name final which you can just run with
+
+    ./final table
+
+Pretty Cool stuff.</p></h3>
