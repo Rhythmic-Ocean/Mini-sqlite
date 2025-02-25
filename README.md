@@ -94,4 +94,4 @@ and you will have compiled the exe file with the name final which you can just r
 
     ./final table
 
-Pretty Cool stuff.</p>
+Pretty Cool.</p>
